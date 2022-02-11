@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* TOP BAR */
+
+.top-search {
+  grid-area: top-search;
+  background-color: RGB(251, 238, 224);
+  display: grid;
+  grid-template-columns: 240px 1fr 350px;
+  grid-gap: 5px;
+}
+
+.top-search .logo {
+  border: 1px black dashed;
+  padding: 5px;
+  grid-gap: 5px;
+}
+
+.top-search .logo .menu-icon,
+.top-search .logo .gmail-logo {
+  border: 1px black dashed;
+}
+
+.top-search .search {
+  border: black dashed 1px;
+  display: grid;
+  padding: 5px;
+}
+
+.top-search .search .search-bar {
+  border: black 1px dashed;
+  display: grid;
+  place-items: center;
+}
+
+.top-search .menu {
+  border: black dashed 1px;
+  display: grid;
+  grid-template-columns: 35px 35px 35px 100px;
+  padding: 5px;
+  padding-left: 50px;
+  justify-content: right;
+  grid-gap: 5px;
+}
+
+.top-search .menu .help,
+.top-search .menu .gear,
+.top-search .menu .options,
+.top-search .menu .profile {
+  border: 1px black dashed;
+}
+
+/* LEFT MENU */
+
+.left-menu {
+  grid-area: left-menu;
+  background-color: rgb(223, 234, 216);
+  grid-template-rows: 50px 2fr 80px 1fr;
+  display: grid;
+  border: 1px black dashed;
+}
+
+.compose,
+.folders,
+.meet,
+.chat {
+  border: dashed black 1px;
+  background-color: rgb(223, 234, 216);
+  margin: 5px;
+}
+
+/* MAIN */
+
+.main {
+  background-color: rgb(230, 214, 214);
+}
+
+.quick-settings {
+  grid-area: quick-settings;
+  background-color: rgb(212, 224, 250);
+}
+
+.right-menu {
+  grid-area: right-menu;
+  background-color: rgb(218, 214, 233);
+}
+
+.container {
+  display: grid;
+  grid-template:
+    "top-search top-search top-search top-search" 50px
+    "left-menu main quick-settings right-menu" 1fr
+    "footer footer footer footer" 50px /
+    220px 1fr 240px 40px;
+  grid-gap: 10px;
+  height: 100vh;
+}
+
+.item-right {
+  border: solid black 3px;
+  display: grid;
+  place-items: center;
+  height: 50px;
+  margin: 15px;
+  background-color: rgb(241, 191, 241);
+}
+
+.right-button {
+  border: solid black 3px;
+  display: grid;
+  place-items: center;
+  margin: 10px;
+  background-color: rgb(224, 224, 88);
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgb(255, 227, 175);
+  display: grid;
+  place-items: center;
+}

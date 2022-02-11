@@ -1,2 +1,52 @@
 * { box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+.container {
+    height: 100vh;
+    display: grid;
+    margin: 4px;
+    padding: 4px;
+    border: 1px solid black;
+    grid-template: 
+            "header header header" 50px
+            "left-menu main right-menu" 1fr / 
+            200px 1fr 300px;
+    background-color: white; 
+    gap: 5px;
+
+}          
+
+.header {
+    grid-area: header;
+    border: black solid 1px;
+    background-color: rgb(157, 157, 255);
+    padding: 10px;
+}
+
+.left-menu {
+    grid-area: left-menu;
+    border: black solid 1px;
+    border-radius: 10px;
+    background-color: rgb(240, 159, 159);
+    padding: 10px;
+}
+
+.main {
+    grid-area: main;
+    border: black solid 1px;
+    border-radius: 10px;
+    background-color: rgb(252, 253, 174);
+    padding: 10px;
+}
+
+.right-menu {
+    grid-area: right-menu;
+    border: black solid 1px;
+    border-radius: 10px;
+    background-color: rgb(159, 224, 150);
+    padding: 10px;
+}
+
+
